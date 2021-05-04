@@ -41,7 +41,7 @@ final class SitemapIndexControllerApiTest extends AbstractTestController
     {
         $response = $this->getBufferedResponse('/sitemap.xml');
 
-        $this->assertResponseRedirects('/sitemap_index.xml', 301);
+        $this->assertResponseRedirects('http://localhost/sitemap_index.xml', 301);
     }
 
     public function testShowActionResponse()
